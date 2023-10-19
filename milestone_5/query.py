@@ -34,7 +34,6 @@ if menu_selection == "1":
 
 # Else, if they pick 2
 elif menu_selection=="2":
-    pass
     search_item=input("Enter the item that you are searching:").lower()
     search_item_state=" ".join(search_item.split(" ")[:-1]).capitalize()
     search_item_category= search_item.split()[-1].capitalize()
