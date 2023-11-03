@@ -2,11 +2,11 @@
 
 
 ## Planned feature of the Warehouse projects are:
-- [X] A user system with roles and permissions for listing and placing orders.
-- [X] Maintain the stock of a warehouse.
-- [X] Order items from the warehouse.
-- [X] Log actions from users.
-- [X] Reporting.
+- [x] A user system with roles and permissions for listing and placing orders.
+- [x] Maintain the stock of a warehouse.
+- [x] Order items from the warehouse.
+- [x] Log actions from users.
+- [x] Reporting.
 
 ## Development setup on windows system: 
 - Ensure you have [Python 3.x](https://www.python.org/downloads/) and [Visual Studio Code](https://code.visualstudio.com/) installed.
