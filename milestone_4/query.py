@@ -13,8 +13,13 @@ from data import warehouse1, warehouse2
 
 # Get the user name
 username=input("Please enter the username. ")
+
+
 # Greet the user
 print(f"Hello {username}, Welcome to the warehouse website")
+
+
+
 # Show the menu and ask to pick a choice
 
 print("The following is the menu please choose the specific numeric associated with the choice. ")
@@ -24,10 +29,14 @@ menu_selection = input("Please type the number associated with the operation ")
 # If they pick 1
 
 if menu_selection == "1":
-    print(f"Items in warehouse 1: {warehouse1}")
+    print(f"Items in warehouse 1: ")
+    for id,items1 in enumerate(warehouse1):
+        print(id+1, ".", items1)
     print()
     print("*"*100)
-    print(f"Items in warehouse 2: {warehouse2}")
+    print(f"Items in warehouse 2: ")
+    for id,items2 in enumerate(warehouse2):
+        print(id+1, ".", items2)
 
 # Else, if they pick 2
 elif menu_selection=="2":
@@ -37,7 +46,7 @@ elif menu_selection=="2":
     count_item_warehouse2 = sum(1 for item in warehouse2 if item.lower() == search_item)
     print("*"*100)
     total_item_quantity=count_item_warehouse1+count_item_warehouse2
-    print(f"Total availability of the item considering both the warehouses are: {count_item_warehouse1+count_item_warehouse2}")
+    print(f"Total availability of the item considering both the warehouses are: {total_item_quantity}")
     if total_item_quantity==0:
         print("Not in stock")
     else:
